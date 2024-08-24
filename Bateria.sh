@@ -30,10 +30,10 @@ if [ -f "$caminho_arquivo" ]; then
         porcentagem=$(echo "$valor" | awk '{printf "%.2f", $1}')
         
         # Exibe o valor final em porcentagem com cores
-        echo -e "${BLUE}O valor da vida da bateria é:${RESET} ${GREEN}${porcentagem}%${RESET}"
+        echo -e "${BLUE}The value of battery life is:${RESET} ${GREEN}${porcentagem}%${RESET}"
     else
         echo -e "${RED}O valor '$valor' no arquivo não é um número válido.${RESET}"
     fi
 else
-    echo -e "${RED}O arquivo não foi encontrado no caminho: $caminho_arquivo${RESET}"
+    echo -e "${RED}The file was not found in the path: $caminho_arquivo${RESET}"
 fi

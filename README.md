@@ -1,6 +1,6 @@
 # batteryLife-
 
-checks the battery life % and informs the number of cycles 
+checks the % of battery life and reports the number of cycles
 
 value taken from bsoh
 

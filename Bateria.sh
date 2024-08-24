@@ -12,7 +12,7 @@ script_path="$0"
 
 # Verifica se o script está sendo executado como root
 if [ "$(id -u)" -ne 0 ]; then
-    echo -e "${YELLOW}Este script precisa ser executado como root. Tentando novamente com su...${RESET}"
+    echo -e "${YELLOW}This script needs to be run as root. Trying again with su...${RESET}"
     exec su -c "$script_path"
 fi
 
